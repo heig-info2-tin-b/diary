@@ -51,4 +51,13 @@
   - `#define ADD(a,b) (a+b)`
   - `#ifdef FOO`, `#ifndef` 
 
+## Fichiers
 
+- `fopen("nom du fichier", "rw")` Ouvrir et créer un fichier
+- `fclose(fp)` Ferme un fichier
+- `fprintf(fp, "Format", ...)` Écrit du texte dans le fichier
+- `ftell(fp)` Retourne la position du curseur
+- `fseek(fp, 3, SEEK_SET)` Déplace le curseur par rapport à une référence
+  - `SEEK_SET` Le début du fichier
+  - `SEEK_CUR` La position actuelle du curseur
+  - `SEEK_END` La position de la fin du fichier 
