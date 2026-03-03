@@ -1,5 +1,21 @@
 # Semaine 02/16
 
+- [x] Lecture écriture de caractères
+- [x] Déterminer la taille d'un fichier
+- [x] Différence ASCII et UTF-8
+- [x] Détection de mots
+- [x] Fichier texte ou binaire ?
+- [ ] Sauvegarder mes exemples ?
+
+## Types de fichiers
+
+Un fichier texte est un fichier qui contient des caractères lisibles par l'homme, tandis qu'un fichier binaire contient des données qui ne sont pas destinées à être lues directement par l'homme. Les fichiers texte utilisent généralement un encodage de caractères comme ASCII ou UTF-8, tandis que les fichiers binaires peuvent contenir n'importe quel type de données, y compris des images, des vidéos, des programmes compilés, etc.
+
+Généralement un fichier texte ne comporte jamais le caractère `\0` (null), parce qu'il n'est pas du texte et il n'apparait pas en UTF-8.
+
+1. texte `fopen("fichier.txt", "r")`
+2. binaire `fopen("fichier.bin", "rb")`
+
 ## Les fichiers
 
 Un flux de données est un flux continu d'informations. En C un flux peut être l'entrée standard (stdin), la sortie standard (stdout) ou la sortie d'erreur standard (stderr). Les fichiers sont des flux de données qui peuvent être lus ou écrits. 
