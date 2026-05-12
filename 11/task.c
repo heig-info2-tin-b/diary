@@ -46,7 +46,7 @@ int pop(Task **head, char *dest) {
 void clear(Task **head) {
     if (head == NULL || *head == NULL) return;
     Task *walker = *head;
-    while (walker != NULL) {
+    while (walker != NULL) {no
         Task *next = walker->next;
         free(walker);
         walker = next;
